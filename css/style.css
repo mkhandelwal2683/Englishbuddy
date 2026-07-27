@@ -473,3 +473,55 @@ font-size:30px;
 
 }
 
+/* Voice Practice */
+
+.voiceCard{
+
+background:white;
+
+padding:20px;
+
+border-radius:18px;
+
+box-shadow:var(--shadow);
+
+margin-top:15px;
+
+}
+
+.voiceCard button{
+
+width:100%;
+
+margin-top:10px;
+
+padding:14px;
+
+border:none;
+
+border-radius:12px;
+
+background:var(--primary);
+
+color:white;
+
+font-size:16px;
+
+}
+
+#speechOutput,
+#targetSentence,
+#voiceResult{
+
+margin-top:15px;
+
+padding:15px;
+
+background:#eef4ff;
+
+border-radius:12px;
+
+word-break:break-word;
+
+}
+
