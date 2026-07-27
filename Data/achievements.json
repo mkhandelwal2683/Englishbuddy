@@ -1,1 +1,28 @@
-
+{
+  "levels": [
+    {
+      "name": "Beginner",
+      "minXP": 0,
+      "maxXP": 99,
+      "badge": "🥉"
+    },
+    {
+      "name": "Intermediate",
+      "minXP": 100,
+      "maxXP": 299,
+      "badge": "🥈"
+    },
+    {
+      "name": "Advanced",
+      "minXP": 300,
+      "maxXP": 599,
+      "badge": "🥇"
+    },
+    {
+      "name": "Expert",
+      "minXP": 600,
+      "maxXP": 9999,
+      "badge": "🏆"
+    }
+  ]
+}
