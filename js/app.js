@@ -463,16 +463,19 @@ function showQuestion() {
 
     if (currentQuestion >= quizData.length) {
 
-        alert(
-            "Quiz Completed!\n\nYour Score : " +
-            score +
-            "/" +
-            quizData.length
-        );
+    updateStreak();
 
-        return;
+    alert(
+        "🎉 Quiz Completed!\n\n" +
+        "Score: " + score + "/" + quizData.length +
+        "\nXP: " + xp +
+        "\nBadge: " + getBadge() +
+        "\n🔥 Streak: " + streak
+    );
 
-    }
+    return;
+
+}
 
     const q = quizData[currentQuestion];
 
@@ -493,14 +496,17 @@ function showQuestion() {
     );
 
     if (
-        q.options[Number(answer) - 1] === q.answer
-    ) {
+    q.options[Number(answer) - 1] === q.answer
+) {
 
-        score++;
+    score++;
 
-        alert("✅ Correct!");
+    addXP(10);
 
-    } else {
+    alert("✅ Correct! +10 XP");
+
+    }
+   else {
 
         alert("❌ Wrong!\nCorrect Answer : " + q.answer);
 
