@@ -438,3 +438,79 @@ function showConversation(index){
 }
 
 loadConversations();                        
+/* ============================
+   Quiz Engine
+============================ */
+
+let quizData = [];
+let currentQuestion = 0;
+let score = 0;
+
+async function loadQuiz() {
+    const response = await fetch("data/quiz.json");
+    quizData = await response.json();
+}
+
+function startQuiz() {
+
+    currentQuestion = 0;
+    score = 0;
+
+    showQuestion();
+}
+
+function showQuestion() {
+
+    if (currentQuestion >= quizData.length) {
+
+        alert(
+            "Quiz Completed!\n\nYour Score : " +
+            score +
+            "/" +
+            quizData.length
+        );
+
+        return;
+
+    }
+
+    const q = quizData[currentQuestion];
+
+    let answer = prompt(
+
+        q.question +
+
+        "\n\n1. " + q.options[0] +
+
+        "\n2. " + q.options[1] +
+
+        "\n3. " + q.options[2] +
+
+        "\n4. " + q.options[3] +
+
+        "\n\nEnter Option Number (1-4)"
+
+    );
+
+    if (
+        q.options[Number(answer) - 1] === q.answer
+    ) {
+
+        score++;
+
+        alert("✅ Correct!");
+
+    } else {
+
+        alert("❌ Wrong!\nCorrect Answer : " + q.answer);
+
+    }
+
+    currentQuestion++;
+
+    showQuestion();
+
+}
+
+loadQuiz();
+   
