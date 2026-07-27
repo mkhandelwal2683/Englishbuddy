@@ -409,4 +409,32 @@ loadRandomLesson();
 increaseProgress();
 
 });
-                        
+// ==========================
+// Conversation Engine
+// ==========================
+
+let conversations = [];
+
+async function loadConversations(){
+
+    const response = await fetch("data/conversations.json");
+
+    conversations = await response.json();
+
+}
+
+function showConversation(index){
+
+    const conversation = conversations[index];
+
+    alert(
+        conversation.title +
+        "\n\n" +
+        conversation.conversation
+        .map(c => c.hindi + "\n" + c.english)
+        .join("\n\n")
+    );
+
+}
+
+loadConversations();                        
