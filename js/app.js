@@ -513,4 +513,65 @@ function showQuestion() {
 }
 
 loadQuiz();
-   
+
+  /* =====================================
+   XP & Achievement System
+===================================== */
+
+let xp = Number(localStorage.getItem("xp")) || 0;
+let streak = Number(localStorage.getItem("streak")) || 1;
+
+// Add XP
+function addXP(points) {
+
+    xp += points;
+
+    localStorage.setItem("xp", xp);
+
+    updateDashboard();
+
+}
+
+// Daily Streak
+
+function updateStreak() {
+
+    streak++;
+
+    localStorage.setItem("streak", streak);
+
+    updateDashboard();
+
+}
+
+// Badge
+
+function getBadge() {
+
+    if (xp >= 600) return "🏆 Expert";
+
+    if (xp >= 300) return "🥇 Advanced";
+
+    if (xp >= 100) return "🥈 Intermediate";
+
+    return "🥉 Beginner";
+
+}
+
+// Dashboard
+
+function updateDashboard() {
+
+    document.getElementById("xpValue").innerHTML = xp;
+
+    document.getElementById("streakValue").innerHTML = streak;
+
+    document.getElementById("badgeValue").innerHTML = getBadge();
+
+}
+
+window.onload = () => {
+
+    updateDashboard();
+
+} 
