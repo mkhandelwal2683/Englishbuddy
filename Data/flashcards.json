@@ -1,1 +1,72 @@
-
+[
+  {
+    "emoji":"🍎",
+    "category":"Fruits",
+    "english":"Apple",
+    "hindi":"सेब",
+    "pronunciation":"एप्पल"
+  },
+  {
+    "emoji":"🍌",
+    "category":"Fruits",
+    "english":"Banana",
+    "hindi":"केला",
+    "pronunciation":"बनाना"
+  },
+  {
+    "emoji":"🥭",
+    "category":"Fruits",
+    "english":"Mango",
+    "hindi":"आम",
+    "pronunciation":"मैंगो"
+  },
+  {
+    "emoji":"🐘",
+    "category":"Animals",
+    "english":"Elephant",
+    "hindi":"हाथी",
+    "pronunciation":"एलिफेंट"
+  },
+  {
+    "emoji":"🦁",
+    "category":"Animals",
+    "english":"Lion",
+    "hindi":"शेर",
+    "pronunciation":"लायन"
+  },
+  {
+    "emoji":"🐶",
+    "category":"Animals",
+    "english":"Dog",
+    "hindi":"कुत्ता",
+    "pronunciation":"डॉग"
+  },
+  {
+    "emoji":"📘",
+    "category":"School",
+    "english":"Book",
+    "hindi":"किताब",
+    "pronunciation":"बुक"
+  },
+  {
+    "emoji":"✏️",
+    "category":"School",
+    "english":"Pencil",
+    "hindi":"पेंसिल",
+    "pronunciation":"पेंसिल"
+  },
+  {
+    "emoji":"🎒",
+    "category":"School",
+    "english":"School Bag",
+    "hindi":"स्कूल बैग",
+    "pronunciation":"स्कूल बैग"
+  },
+  {
+    "emoji":"🚗",
+    "category":"Transport",
+    "english":"Car",
+    "hindi":"कार",
+    "pronunciation":"कार"
+  }
+]
