@@ -1,1 +1,162 @@
-
+[
+  {
+    "id": 1,
+    "category": "Greetings",
+    "hindi": "नमस्ते",
+    "english": "Hello",
+    "pronunciation": "हेलो",
+    "example": "Hello, how are you?"
+  },
+  {
+    "id": 2,
+    "category": "Greetings",
+    "hindi": "सुप्रभात",
+    "english": "Good Morning",
+    "pronunciation": "गुड मॉर्निंग",
+    "example": "Good Morning, Sir."
+  },
+  {
+    "id": 3,
+    "category": "Greetings",
+    "hindi": "शुभ रात्रि",
+    "english": "Good Night",
+    "pronunciation": "गुड नाइट",
+    "example": "Good Night, Mom."
+  },
+  {
+    "id": 4,
+    "category": "Greetings",
+    "hindi": "धन्यवाद",
+    "english": "Thank You",
+    "pronunciation": "थैंक यू",
+    "example": "Thank you very much."
+  },
+  {
+    "id": 5,
+    "category": "Greetings",
+    "hindi": "कृपया",
+    "english": "Please",
+    "pronunciation": "प्लीज़",
+    "example": "Please help me."
+  },
+  {
+    "id": 6,
+    "category": "Daily Use",
+    "hindi": "आप कैसे हैं?",
+    "english": "How are you?",
+    "pronunciation": "हाउ आर यू",
+    "example": "How are you today?"
+  },
+  {
+    "id": 7,
+    "category": "Daily Use",
+    "hindi": "मैं ठीक हूँ।",
+    "english": "I am fine.",
+    "pronunciation": "आई एम फाइन",
+    "example": "I am fine, thank you."
+  },
+  {
+    "id": 8,
+    "category": "Daily Use",
+    "hindi": "आपका नाम क्या है?",
+    "english": "What is your name?",
+    "pronunciation": "व्हाट इज़ योर नेम",
+    "example": "What is your name?"
+  },
+  {
+    "id": 9,
+    "category": "Daily Use",
+    "hindi": "मेरा नाम राहुल है।",
+    "english": "My name is Rahul.",
+    "pronunciation": "माय नेम इज़ राहुल",
+    "example": "My name is Rahul."
+  },
+  {
+    "id": 10,
+    "category": "Daily Use",
+    "hindi": "फिर मिलेंगे।",
+    "english": "See you again.",
+    "pronunciation": "सी यू अगेन",
+    "example": "See you again tomorrow."
+  },
+  {
+    "id": 11,
+    "category": "School",
+    "hindi": "यह मेरी किताब है।",
+    "english": "This is my book.",
+    "pronunciation": "दिस इज़ माय बुक",
+    "example": "This is my English book."
+  },
+  {
+    "id": 12,
+    "category": "School",
+    "hindi": "यह मेरी पेंसिल है।",
+    "english": "This is my pencil.",
+    "pronunciation": "दिस इज़ माय पेंसिल",
+    "example": "This is my pencil."
+  },
+  {
+    "id": 13,
+    "category": "School",
+    "hindi": "मुझे स्कूल जाना है।",
+    "english": "I have to go to school.",
+    "pronunciation": "आई हैव टू गो टू स्कूल",
+    "example": "I have to go to school now."
+  },
+  {
+    "id": 14,
+    "category": "Family",
+    "hindi": "यह मेरे पिता हैं।",
+    "english": "This is my father.",
+    "pronunciation": "दिस इज़ माय फादर",
+    "example": "This is my father."
+  },
+  {
+    "id": 15,
+    "category": "Family",
+    "hindi": "यह मेरी माता हैं।",
+    "english": "This is my mother.",
+    "pronunciation": "दिस इज़ माय मदर",
+    "example": "This is my mother."
+  },
+  {
+    "id": 16,
+    "category": "Numbers",
+    "hindi": "एक",
+    "english": "One",
+    "pronunciation": "वन",
+    "example": "I have one pen."
+  },
+  {
+    "id": 17,
+    "category": "Numbers",
+    "hindi": "दो",
+    "english": "Two",
+    "pronunciation": "टू",
+    "example": "Two apples."
+  },
+  {
+    "id": 18,
+    "category": "Colours",
+    "hindi": "लाल",
+    "english": "Red",
+    "pronunciation": "रेड",
+    "example": "The apple is red."
+  },
+  {
+    "id": 19,
+    "category": "Animals",
+    "hindi": "हाथी",
+    "english": "Elephant",
+    "pronunciation": "एलिफेंट",
+    "example": "The elephant is big."
+  },
+  {
+    "id": 20,
+    "category": "Fruits",
+    "hindi": "सेब",
+    "english": "Apple",
+    "pronunciation": "एप्पल",
+    "example": "Apple is a healthy fruit."
+  }
+]
