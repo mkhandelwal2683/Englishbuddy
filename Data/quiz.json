@@ -1,1 +1,92 @@
-
+[
+  {
+    "id": 1,
+    "level": "Beginner",
+    "category": "Greetings",
+    "question": "What is the English of 'नमस्ते'?",
+    "options": ["Hello", "Goodbye", "Please", "Sorry"],
+    "answer": "Hello"
+  },
+  {
+    "id": 2,
+    "level": "Beginner",
+    "category": "Greetings",
+    "question": "What is the Hindi of 'Thank You'?",
+    "options": ["धन्यवाद", "नमस्ते", "कृपया", "माफ़ कीजिए"],
+    "answer": "धन्यवाद"
+  },
+  {
+    "id": 3,
+    "level": "Beginner",
+    "category": "Family",
+    "question": "Father means?",
+    "options": ["पिता", "माता", "भाई", "बहन"],
+    "answer": "पिता"
+  },
+  {
+    "id": 4,
+    "level": "Beginner",
+    "category": "School",
+    "question": "Book means?",
+    "options": ["किताब", "पेंसिल", "बैग", "रबर"],
+    "answer": "किताब"
+  },
+  {
+    "id": 5,
+    "level": "Beginner",
+    "category": "Numbers",
+    "question": "One means?",
+    "options": ["एक", "दो", "तीन", "चार"],
+    "answer": "एक"
+  },
+  {
+    "id": 6,
+    "level": "Beginner",
+    "category": "Colours",
+    "question": "Red means?",
+    "options": ["लाल", "हरा", "नीला", "पीला"],
+    "answer": "लाल"
+  },
+  {
+    "id": 7,
+    "level": "Beginner",
+    "category": "Animals",
+    "question": "Dog means?",
+    "options": ["कुत्ता", "बिल्ली", "घोड़ा", "गाय"],
+    "answer": "कुत्ता"
+  },
+  {
+    "id": 8,
+    "level": "Beginner",
+    "category": "Fruits",
+    "question": "Apple means?",
+    "options": ["सेब", "केला", "आम", "अंगूर"],
+    "answer": "सेब"
+  },
+  {
+    "id": 9,
+    "level": "Beginner",
+    "category": "Conversation",
+    "question": "How are you? means?",
+    "options": [
+      "आप कैसे हैं?",
+      "आप कहाँ हैं?",
+      "आप कौन हैं?",
+      "आप क्या कर रहे हैं?"
+    ],
+    "answer": "आप कैसे हैं?"
+  },
+  {
+    "id": 10,
+    "level": "Beginner",
+    "category": "Conversation",
+    "question": "Good Morning means?",
+    "options": [
+      "सुप्रभात",
+      "शुभ रात्रि",
+      "नमस्ते",
+      "धन्यवाद"
+    ],
+    "answer": "सुप्रभात"
+  }
+]
