@@ -581,3 +581,90 @@ window.onload = () => {
     updateDashboard();
 
 } 
+
+/* ==========================================
+   Voice Practice Engine
+========================================== */
+
+let recognition;
+
+if ("webkitSpeechRecognition" in window) {
+
+recognition = new webkitSpeechRecognition();
+
+recognition.lang = "en-US";
+
+recognition.continuous = false;
+
+recognition.interimResults = false;
+
+recognition.onresult = function(event){
+
+let speech = event.results[0][0].transcript;
+
+document.getElementById("speechOutput").innerHTML = speech;
+
+checkSpeech(speech);
+
+};
+
+recognition.onerror = function(){
+
+document.getElementById("voiceResult").innerHTML =
+"❌ Unable to recognize speech.";
+
+};
+
+}else{
+
+alert("Speech Recognition is not supported on this browser.");
+
+}
+
+document
+.getElementById("startVoice")
+.addEventListener("click",()=>{
+
+if(recognition){
+
+recognition.start();
+
+}
+
+});
+
+document
+.getElementById("stopVoice")
+.addEventListener("click",()=>{
+
+if(recognition){
+
+recognition.stop();
+
+}
+
+});
+
+function checkSpeech(userSpeech){
+
+const target = document
+.getElementById("targetSentence")
+.innerText
+.toLowerCase();
+
+if(userSpeech.toLowerCase()==target){
+
+document.getElementById("voiceResult").innerHTML =
+"✅ Excellent! Perfect pronunciation.";
+
+addXP(20);
+
+}else{
+
+document.getElementById("voiceResult").innerHTML =
+"🙂 Good try! Please speak again.";
+
+}
+
+}
+   
