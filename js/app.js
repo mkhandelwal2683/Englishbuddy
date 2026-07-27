@@ -999,3 +999,105 @@ speechSynthesis.speak(speech);
 
 loadFlashcards();   
    
+/* ==========================================
+   Daily Learning Challenge
+========================================== */
+
+let goal = Number(localStorage.getItem("goal")) || 0;
+
+const words = [
+"Apple",
+"Teacher",
+"School",
+"Morning",
+"Friend",
+"Family",
+"Book",
+"Water",
+"House",
+"Market"
+];
+
+const sentences = [
+
+"I am learning English every day.",
+
+"Practice makes a person confident.",
+
+"Speak English without fear.",
+
+"Learning one sentence daily is enough.",
+
+"Believe in yourself."
+
+];
+
+function loadDailyChallenge(){
+
+let word=
+
+words[Math.floor(Math.random()*words.length)];
+
+let sentence=
+
+sentences[Math.floor(Math.random()*sentences.length)];
+
+wordDay.innerHTML=word;
+
+sentenceDay.innerHTML=sentence;
+
+updateGoal();
+
+}
+
+function updateGoal(){
+
+goalBar.style.width=goal+"%";
+
+goalValue.innerHTML=goal+"%";
+
+}
+
+completeGoal.onclick=()=>{
+
+if(goal<100){
+
+goal+=10;
+
+localStorage.setItem("goal",goal);
+
+updateGoal();
+
+addXP(5);
+
+}
+
+if(goal>=100){
+
+alert("🎉 Daily Goal Completed!");
+
+}
+
+}
+
+loadDailyChallenge();
+
+function resetDailyGoal(){
+
+const today=new Date().toDateString();
+
+const saved=localStorage.getItem("goalDate");
+
+if(saved!==today){
+
+goal=0;
+9localStorage.setItem("goalDate",today);
+
+localStorage.setItem("goal",0);
+
+}
+
+}
+
+resetDailyGoal();
+   
