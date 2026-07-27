@@ -838,3 +838,84 @@ addXP(20);
 
 loadStories();
    
+/* ==========================================
+   Flashcard Engine
+========================================== */
+
+let flashcards=[];
+let currentFlash=0;
+
+async function loadFlashcards(){
+
+const response=await fetch("data/flashcards.json");
+
+flashcards=await response.json();
+
+showFlashcard();
+
+}
+
+function showFlashcard(){
+
+if(flashcards.length===0)return;
+
+const card=flashcards[currentFlash];
+
+flashEmoji.innerHTML=card.emoji;
+
+flashEnglish.innerHTML=card.english;
+
+flashHindi.innerHTML=card.hindi;
+
+flashPronunciation.innerHTML=card.pronunciation;
+
+}
+
+nextCard.onclick=()=>{
+
+currentFlash++;
+
+if(currentFlash>=flashcards.length){
+
+currentFlash=0;
+
+}
+
+showFlashcard();
+
+addXP(2);
+
+}
+
+prevCard.onclick=()=>{
+
+currentFlash--;
+
+if(currentFlash<0){
+
+currentFlash=flashcards.length-1;
+
+}
+
+showFlashcard();
+
+}
+
+speakCard.onclick=()=>{
+
+let speech=new SpeechSynthesisUtterance(
+
+flashEnglish.innerHTML9o
+
+);
+
+speech.lang="en-US";
+
+speech.rate=0.8;
+
+speechSynthesis.speak(speech);
+
+}
+
+loadFlashcards();
+   
