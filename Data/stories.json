@@ -1,1 +1,56 @@
-
+[
+  {
+    "id": 1,
+    "title": "The Honest Boy",
+    "level": "Beginner",
+    "story": [
+      {
+        "hindi": "एक लड़का बहुत ईमानदार था।",
+        "english": "A boy was very honest."
+      },
+      {
+        "hindi": "उसे सड़क पर एक बटुआ मिला।",
+        "english": "He found a wallet on the road."
+      },
+      {
+        "hindi": "उसने बटुआ उसके मालिक को लौटा दिया।",
+        "english": "He returned the wallet to its owner."
+      },
+      {
+        "hindi": "मालिक बहुत खुश हुआ।",
+        "english": "The owner was very happy."
+      },
+      {
+        "hindi": "ईमानदारी सबसे अच्छी नीति है।",
+        "english": "Honesty is the best policy."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "The Clever Crow",
+    "level": "Kids",
+    "story": [
+      {
+        "hindi": "एक कौआ बहुत प्यासा था।",
+        "english": "A crow was very thirsty."
+      },
+      {
+        "hindi": "उसे एक घड़ा मिला।",
+        "english": "He found a pot."
+      },
+      {
+        "hindi": "घड़े में थोड़ा पानी था।",
+        "english": "There was little water in the pot."
+      },
+      {
+        "hindi": "उसने उसमें कंकड़ डाले।",
+        "english": "He dropped pebbles into it."
+      },
+      {
+        "hindi": "पानी ऊपर आ गया।",
+        "english": "The water came up."
+      }
+    ]
+  }
+]
