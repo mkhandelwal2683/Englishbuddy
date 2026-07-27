@@ -1,1 +1,73 @@
+{
+  "Family": [
+    {"hindi":"पिता","english":"Father","pronunciation":"फादर"},
+    {"hindi":"माता","english":"Mother","pronunciation":"मदर"},
+    {"hindi":"भाई","english":"Brother","pronunciation":"ब्रदर"},
+    {"hindi":"बहन","english":"Sister","pronunciation":"सिस्टर"},
+    {"hindi":"दादा","english":"Grandfather","pronunciation":"ग्रैंडफादर"},
+    {"hindi":"दादी","english":"Grandmother","pronunciation":"ग्रैंडमदर"},
+    {"hindi":"चाचा","english":"Uncle","pronunciation":"अंकल"},
+    {"hindi":"चाची","english":"Aunt","pronunciation":"आंट"},
+    {"hindi":"बेटा","english":"Son","pronunciation":"सन"},
+    {"hindi":"बेटी","english":"Daughter","pronunciation":"डॉटर"}
+  ],
 
+  "School": [
+    {"hindi":"किताब","english":"Book","pronunciation":"बुक"},
+    {"hindi":"कॉपी","english":"Notebook","pronunciation":"नोटबुक"},
+    {"hindi":"पेंसिल","english":"Pencil","pronunciation":"पेंसिल"},
+    {"hindi":"रबर","english":"Eraser","pronunciation":"इरेज़र"},
+    {"hindi":"बैग","english":"School Bag","pronunciation":"स्कूल बैग"},
+    {"hindi":"शिक्षक","english":"Teacher","pronunciation":"टीचर"},
+    {"hindi":"विद्यार्थी","english":"Student","pronunciation":"स्टूडेंट"},
+    {"hindi":"कक्षा","english":"Classroom","pronunciation":"क्लासरूम"},
+    {"hindi":"ब्लैकबोर्ड","english":"Blackboard","pronunciation":"ब्लैकबोर्ड"},
+    {"hindi":"होमवर्क","english":"Homework","pronunciation":"होमवर्क"}
+  ],
+
+  "Colours":[
+    {"hindi":"लाल","english":"Red","pronunciation":"रेड"},
+    {"hindi":"नीला","english":"Blue","pronunciation":"ब्लू"},
+    {"hindi":"हरा","english":"Green","pronunciation":"ग्रीन"},
+    {"hindi":"पीला","english":"Yellow","pronunciation":"येलो"},
+    {"hindi":"काला","english":"Black","pronunciation":"ब्लैक"},
+    {"hindi":"सफेद","english":"White","pronunciation":"व्हाइट"},
+    {"hindi":"गुलाबी","english":"Pink","pronunciation":"पिंक"},
+    {"hindi":"भूरा","english":"Brown","pronunciation":"ब्राउन"}
+  ],
+
+  "Numbers":[
+    {"hindi":"एक","english":"One"},
+    {"hindi":"दो","english":"Two"},
+    {"hindi":"तीन","english":"Three"},
+    {"hindi":"चार","english":"Four"},
+    {"hindi":"पाँच","english":"Five"},
+    {"hindi":"छः","english":"Six"},
+    {"hindi":"सात","english":"Seven"},
+    {"hindi":"आठ","english":"Eight"},
+    {"hindi":"नौ","english":"Nine"},
+    {"hindi":"दस","english":"Ten"}
+  ],
+
+  "Fruits":[
+    {"hindi":"सेब","english":"Apple"},
+    {"hindi":"केला","english":"Banana"},
+    {"hindi":"आम","english":"Mango"},
+    {"hindi":"अंगूर","english":"Grapes"},
+    {"hindi":"संतरा","english":"Orange"},
+    {"hindi":"अमरूद","english":"Guava"},
+    {"hindi":"अनार","english":"Pomegranate"},
+    {"hindi":"पपीता","english":"Papaya"}
+  ],
+
+  "Animals":[
+    {"hindi":"शेर","english":"Lion"},
+    {"hindi":"बाघ","english":"Tiger"},
+    {"hindi":"हाथी","english":"Elephant"},
+    {"hindi":"कुत्ता","english":"Dog"},
+    {"hindi":"बिल्ली","english":"Cat"},
+    {"hindi":"गाय","english":"Cow"},
+    {"hindi":"घोड़ा","english":"Horse"},
+    {"hindi":"बंदर","english":"Monkey"}
+  ]
+}
