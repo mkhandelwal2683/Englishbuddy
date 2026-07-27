@@ -667,4 +667,109 @@ document.getElementById("voiceResult").innerHTML =
 }
 
 }
+
+/* ==================================
+   Translation Practice
+================================== */
+
+let currentTranslation = null;
+
+function newTranslationQuestion(){
+
+if(lessonData.length===0) return;
+
+let random=Math.floor(Math.random()*lessonData.length);
+
+currentTranslation=lessonData[random];
+
+const mode=document
+.getElementById("practiceMode")
+.value;
+
+if(mode==="hi-en"){
+
+document
+.getElementById("translationQuestion")
+.innerHTML=currentTranslation.hindi;
+
+}else{
+
+document
+.getElementById("translationQuestion")
+.innerHTML=currentTranslation.english;
+
+}
+
+document
+.getElementById("translationResult")
+.innerHTML="";
+
+document
+.getElementById("translationInput")
+.value="";
+
+}
+
+document
+.getElementById("checkTranslation")
+.addEventListener("click",()=>{
+
+const mode=document
+.getElementById("practiceMode")
+.value;
+
+const answer=document
+.getElementById("translationInput")
+.value
+.trim()
+.toLowerCase();
+
+let correct=false;
+
+if(mode==="hi-en"){
+
+correct=
+answer===currentTranslation.english.toLowerCase();
+
+}else{
+
+correct=
+answer===currentTranslation.hindi;
+
+}
+
+if(correct){
+
+document
+.getElementById("translationResult")
+.innerHTML=
+"✅ Correct! +15 XP";
+
+addXP(15);
+
+}else{
+
+document
+.getElementById("translationResult")
+.innerHTML=
+"❌ Correct Answer:<br><br><b>"
++
+(mode==="hi-en"
+?currentTranslation.english
+:currentTranslation.hindi)
++
+"</b>";
+
+}
+
+setTimeout(newTranslationQuestion,2000);
+
+});
+
+document
+.getElementById("practiceMode")
+.addEventListener("change",newTranslationQuestion);
+
+setTimeout(newTranslationQuestion,1000);
+   
    
