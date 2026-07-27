@@ -1,1 +1,165 @@
+[
+  {
+    "id": 1,
+    "category": "Greetings",
+    "title": "Meeting a Friend",
+    "conversation": [
+      {
+        "hindi": "नमस्ते!",
+        "english": "Hello!"
+      },
+      {
+        "hindi": "आप कैसे हैं?",
+        "english": "How are you?"
+      },
+      {
+        "hindi": "मैं ठीक हूँ।",
+        "english": "I am fine."
+      },
+      {
+        "hindi": "धन्यवाद।",
+        "english": "Thank you."
+      }
+    ]
+  },
 
+  {
+    "id": 2,
+    "category": "School",
+    "title": "In the Classroom",
+    "conversation": [
+      {
+        "hindi": "सर, क्या मैं अंदर आ सकता हूँ?",
+        "english": "Sir, may I come in?"
+      },
+      {
+        "hindi": "हाँ, अंदर आओ।",
+        "english": "Yes, come in."
+      },
+      {
+        "hindi": "धन्यवाद सर।",
+        "english": "Thank you, Sir."
+      }
+    ]
+  },
+
+  {
+    "id": 3,
+    "category": "Home",
+    "title": "At Home",
+    "conversation": [
+      {
+        "hindi": "मम्मी, मुझे भूख लगी है।",
+        "english": "Mom, I am hungry."
+      },
+      {
+        "hindi": "खाना तैयार है।",
+        "english": "Food is ready."
+      },
+      {
+        "hindi": "धन्यवाद।",
+        "english": "Thank you."
+      }
+    ]
+  },
+
+  {
+    "id": 4,
+    "category": "Shopping",
+    "title": "At the Shop",
+    "conversation": [
+      {
+        "hindi": "यह कितना है?",
+        "english": "How much is this?"
+      },
+      {
+        "hindi": "यह 100 रुपये का है।",
+        "english": "It is 100 rupees."
+      },
+      {
+        "hindi": "ठीक है, मुझे दे दीजिए।",
+        "english": "Okay, please give it to me."
+      }
+    ]
+  },
+
+  {
+    "id": 5,
+    "category": "Travel",
+    "title": "At the Bus Stand",
+    "conversation": [
+      {
+        "hindi": "बस कब आएगी?",
+        "english": "When will the bus arrive?"
+      },
+      {
+        "hindi": "10 मिनट में।",
+        "english": "In 10 minutes."
+      },
+      {
+        "hindi": "धन्यवाद।",
+        "english": "Thank you."
+      }
+    ]
+  },
+
+  {
+    "id": 6,
+    "category": "Restaurant",
+    "title": "Ordering Food",
+    "conversation": [
+      {
+        "hindi": "मुझे एक चाय चाहिए।",
+        "english": "I would like a cup of tea."
+      },
+      {
+        "hindi": "और कुछ?",
+        "english": "Anything else?"
+      },
+      {
+        "hindi": "नहीं, धन्यवाद।",
+        "english": "No, thank you."
+      }
+    ]
+  },
+
+  {
+    "id": 7,
+    "category": "Hospital",
+    "title": "Doctor Visit",
+    "conversation": [
+      {
+        "hindi": "क्या समस्या है?",
+        "english": "What is the problem?"
+      },
+      {
+        "hindi": "मुझे बुखार है।",
+        "english": "I have a fever."
+      },
+      {
+        "hindi": "यह दवा लीजिए।",
+        "english": "Please take this medicine."
+      }
+    ]
+  },
+
+  {
+    "id": 8,
+    "category": "Phone",
+    "title": "Phone Call",
+    "conversation": [
+      {
+        "hindi": "हेलो!",
+        "english": "Hello!"
+      },
+      {
+        "hindi": "क्या मैं अमित से बात कर सकता हूँ?",
+        "english": "May I speak to Amit?"
+      },
+      {
+        "hindi": "ज़रूर।",
+        "english": "Certainly."
+      }
+    ]
+  }
+]
