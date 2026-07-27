@@ -436,3 +436,40 @@ grid-template-columns:repeat(2,1fr);
 }
 
 }
+
+/* Dashboard */
+
+.dashboard{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:15px;
+
+margin-top:15px;
+
+}
+
+.dashboardCard{
+
+background:white;
+
+padding:20px;
+
+text-align:center;
+
+border-radius:18px;
+
+box-shadow:var(--shadow);
+
+}
+
+.dashboardCard h1{
+
+color:var(--primary);
+
+font-size:30px;
+
+}
+
