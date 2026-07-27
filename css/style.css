@@ -524,4 +524,28 @@ border-radius:12px;
 word-break:break-word;
 
 }
+#translationQuestion{
 
+font-size:22px;
+
+font-weight:bold;
+
+margin-top:15px;
+
+color:#2563eb;
+
+}
+
+#translationResult{
+
+margin-top:20px;
+
+padding:15px;
+
+border-radius:12px;
+
+background:#eef4ff;
+
+font-size:18px;
+
+}
