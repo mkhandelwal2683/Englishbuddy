@@ -772,4 +772,69 @@ document
 
 setTimeout(newTranslationQuestion,1000);
    
+ /* ==========================================
+   Story Engine
+========================================== */
+
+let stories = [];
+
+async function loadStories(){
+
+const response = await fetch("data/stories.json");
+
+stories = await response.json();
+
+showStory();
+
+}
+
+function showStory(){
+
+if(stories.length===0) return;
+
+let random = Math.floor(Math.random()*stories.length);
+
+let story = stories[random];
+
+document.getElementById("storyTitle").innerHTML = story.title;
+
+let html = "";
+
+story.story.forEach(line=>{
+
+html += `
+<p>
+🇮🇳 ${line.hindi}<br>
+🇬🇧 ${line.english}
+</p><hr>
+`;
+
+});
+
+document.getElementById("storyContent").innerHTML = html;
+
+}
+
+document.getElementById("nextStory")
+.addEventListener("click",showStory);
+
+document.getElementById("readStory")
+.addEventListener("click",()=>{
+
+let text=document.getElementById("storyContent")
+.innerText;
+
+let speech=new SpeechSynthesisUtterance(text);
+
+speech.lang="en-US";
+
+speech.rate=0.8;
+
+speechSynthesis.speak(speech);
+
+addXP(20);
+
+});
+
+loadStories();
    
