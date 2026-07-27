@@ -308,3 +308,105 @@ console.log(err);
 });
 
 }
+/* ==========================================
+   Lesson Engine
+========================================== */
+
+let lessonData = [];
+let vocabularyData = {};
+
+// Load Lessons
+async function loadLessons() {
+    try {
+        const response = await fetch("data/lessons.json");
+        lessonData = await response.json();
+
+        loadRandomLesson();
+
+    } catch (error) {
+        console.log("Unable to load lessons", error);
+    }
+}
+
+// Load Vocabulary
+async function loadVocabulary() {
+
+    try {
+
+        const response = await fetch("data/vocabulary.json");
+
+        vocabularyData = await response.json();
+
+    } catch (error) {
+
+        console.log(error);
+
+    }
+
+}
+
+// Random Lesson
+
+function loadRandomLesson(){
+
+    if(lessonData.length===0) return;
+
+    let random=Math.floor(Math.random()*lessonData.length);
+
+    let lesson=lessonData[random];
+
+    document.getElementById("hindiSentence").innerHTML=lesson.hindi;
+
+    document.getElementById("englishSentence").innerHTML=lesson.english;
+
+}
+
+// Search
+
+searchInput.addEventListener("keyup",()=>{
+
+let keyword=searchInput.value.toLowerCase();
+
+if(keyword.length<1){
+
+loadRandomLesson();
+
+return;
+
+}
+
+let result=lessonData.find(item=>
+
+item.hindi.includes(keyword)
+
+||
+
+item.english.toLowerCase().includes(keyword)
+
+);
+
+if(result){
+
+document.getElementById("hindiSentence").innerHTML=result.hindi;
+
+document.getElementById("englishSentence").innerHTML=result.english;
+
+}
+
+});
+
+// Start App
+
+loadLessons();
+
+loadVocabulary();
+   document
+.getElementById("nextLesson")
+.addEventListener("click",()=>{
+
+loadRandomLesson();
+
+increaseProgress();
+
+});
+                        
