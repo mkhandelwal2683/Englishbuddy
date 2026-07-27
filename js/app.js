@@ -1101,3 +1101,84 @@ localStorage.setItem("goal",0);
 
 resetDailyGoal();
    
+/* ==========================================
+   Kids Learning Zone
+========================================== */
+
+let alphabet=[];
+let currentLetter=0;
+
+async function loadAlphabet(){
+
+const response=await fetch("data/alphabet.json");
+
+alphabet=await response.json();
+
+showLetter();
+
+}
+
+function showLetter(){
+
+if(alphabet.length===0) return;
+
+const item=alphabet[currentLetter];
+
+letter.innerHTML=item.letter;
+
+letterEmoji.innerHTML=item.emoji;
+
+letterWord.innerHTML=item.word;
+
+letterHindi.innerHTML=item.hindi;
+
+}
+
+nextLetter.onclick=()=>{
+
+currentLetter++;
+
+if(currentLetter>=alphabet.length){
+
+currentLetter=0;
+
+}
+
+showLetter();
+
+addXP(1);
+
+}
+
+previousLetter.onclick=()=>{
+
+currentLetter--;
+
+if(currentLetter<0){
+
+currentLetter=alphabet.length-1;
+
+}
+
+showLetter();
+
+}
+
+speakLetter.onclick=()=>{
+
+let speech=new SpeechSynthesisUtterance(
+
+letterWord.innerHTML
+
+);
+
+speech.lang="en-US";
+
+speech.rate=0.8;
+
+speechSynthesis.speak(speech);
+
+}
+
+loadAlphabet();
+
